@@ -28,17 +28,23 @@ function navLinkClick() {
 }
 
 
-// sticky navbar on scroll
-window.onscroll = function() {myFunction()};
+
+// sticky navbar on scroll and display mini profile info beside overview tablink
+window.onscroll = function() {myFunction();};
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
+const infoScroll=document.getElementById("infoScroll");
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
+    infoScroll.style.visibility="visible"
   } else {
     navbar.classList.remove("sticky");
+    infoScroll.style.visibility="hidden"
   }
+ 
 }
+
 
