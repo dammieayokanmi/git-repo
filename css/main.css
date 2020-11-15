@@ -6,15 +6,14 @@ h2,
 h3 {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 img {
   vertical-align: middle;
 }
-svg.white{
-	
-    fill: white;
-
+svg.white {
+  fill: white;
 }
 * {
   margin: 0;
@@ -52,7 +51,6 @@ svg.white{
   margin-right: 6px;
 }
 
-
 /* default css end */
 
 /* navbar regular css start */
@@ -61,7 +59,7 @@ svg.white{
   background: #24292e;
   line-height: 1.5;
   font-size: 14px;
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .site-navbar {
   justify-content: space-between;
@@ -100,12 +98,14 @@ a.site-logo > svg:hover {
 }
 .lhs .search > input::placeholder {
   color: #d1d5da;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .mobileNotify {
   display: none;
 }
-.mobilePull,.dropdown-menu {
+.mobilePull,
+.dropdown-menu {
   display: none !important;
 }
 
@@ -120,7 +120,8 @@ a.site-logo > svg:hover {
   padding: 16px 0;
   font-size: 14px;
   display: block;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-decoration: none;
   font-weight: 600;
 }
@@ -153,9 +154,9 @@ a.site-logo > svg:hover {
   right: 0;
   top: -4px;
 }
-.dotLang{
-	position: relative;
-	height: 12px;
+.dotLang {
+  position: relative;
+  height: 12px;
   width: 12px;
   margin-right: 3px;
   border-radius: 50%;
@@ -169,8 +170,8 @@ a.site-logo > svg:hover {
   height: 20px;
 }
 .rhs .arrow {
-	width: 27px;
-    height: 32px;
+  width: 27px;
+  height: 32px;
   margin-left: -4px;
   margin-top: 4px;
 }
@@ -217,7 +218,7 @@ a.site-logo > svg:hover {
 /* sidebar css start */
 
 .large_dp {
-	z-index: 3;
+  z-index: 3;
 
   border-radius: 50%;
   display: inline-block;
@@ -225,13 +226,12 @@ a.site-logo > svg:hover {
   /* height:300px; */
   /* background: b */
 }
-.large_dp img{
-	border-radius: 50%;
+.large_dp img {
+  border-radius: 50%;
   width: 100%;
-
 }
-.mobileinfo{
-	display: none;
+.mobileinfo {
+  display: none;
 }
 
 .smiley {
@@ -240,7 +240,7 @@ a.site-logo > svg:hover {
   background-color: white;
   border-radius: 50%;
   position: absolute;
- 
+
   right: 7px;
   bottom: 137px;
 
@@ -260,14 +260,14 @@ a.site-logo > svg:hover {
   display: none;
   padding-left: 5px;
 }
-.smiley>div:hover .text{
+.smiley > div:hover .text {
   color: #0366d6;
 }
 
-.smiley>div:hover .octicon-smiley {
-	fill: #0366d6;
-	fill-opacity: 1;
-  }
+.smiley > div:hover .octicon-smiley {
+  fill: #0366d6;
+  fill-opacity: 1;
+}
 .smiley:hover {
   border-radius: 20px;
   width: max-content;
@@ -282,58 +282,69 @@ a.site-logo > svg:hover {
 
 /* Style the tab */
 .tab {
-	z-index: 1;
+  z-index: 1;
   overflow: hidden;
   background-color: #fff;
   border-bottom: 1px solid #ccc;
   width: 100%;
 }
 .sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-  }
-  .contenty{padding-top: 0;}
-  
-  .sticky + .contenty {
-	padding-top: 60px;
-  }
-.tab .dp, .dropdown-menu .dp{
-	height: 32px;
-	width: 32px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-  }
-  .dropdown-menu #sign-out{
-	margin-left: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-  .dropdown-menu .dp{
-	height: 20px;
-	width: 20px;
-  }
-  .dropdown-menu svg{
-	  fill: #fff;
-	  vertical-align: text-bottom;
-  }
-  .tab .dp img, .mr-6 .dp img, .dropdown-menu .dp img{
-	border-radius: 50%;
-	width: 100%;
-  }
-  .mr-6 .dp{
-	  width: 20px;
-  }
-  .tab .container-body{
-	  padding-bottom: 0!important;
-  }
-  .tab .info {
-	  width: 25%;
-  }
-  .tab .info .text{
-	  font-size: 14px;
-	  color: #24292e;
-	  padding-left: 6px;
-  }
+.contenty {
+  padding-top: 0;
+}
+
+.sticky + .contenty {
+  padding-top: 60px;
+}
+.tab .dp,
+.dropdown-menu .dp {
+  height: 32px;
+  width: 32px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dropdown-menu #sign-out {
+  margin-left: 5px;
+}
+.dropdown-menu .dp {
+  height: 20px;
+  width: 20px;
+}
+.dropdown-menu svg {
+  fill: #fff;
+  vertical-align: text-bottom;
+}
+.tab .dp img,
+.mr-6 .dp img,
+.dropdown-menu .dp img {
+  border-radius: 50%;
+  width: 100%;
+}
+.mr-6 .dp {
+  width: 20px;
+}
+.tab .container-body {
+  padding-bottom: 0 !important;
+  position: relative;
+}
+.tab .info {
+  width: 25%;
+  
+}
+#infoScroll{
+  position: sticky;
+  top: -230px;
+}
+.tab .info .text {
+  font-size: 14px;
+  color: #24292e;
+  padding-left: 6px;
+}
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
@@ -347,65 +358,62 @@ a.site-logo > svg:hover {
   color: #24292e;
   border-bottom: 3px solid #fff;
 }
-.tab .r-pd{
-padding: 12px 16px;
+.tab .r-pd {
+  padding: 12px 16px;
 }
-
 
 /* Change background color of buttons on hover */
 .tab button:hover {
   border-bottom: 3px solid #ddd;
 }
-.tablinks svg{
-	vertical-align: text-bottom;
-	opacity: .4;
+.tablinks svg {
+  vertical-align: text-bottom;
+  opacity: 0.4;
 }
 /* Create an active/current tablink class */
 .tab button.active {
-	font-weight: 600;
-    border-bottom-color: rgb(249, 130, 108);
+  font-weight: 600;
+  border-bottom-color: rgb(249, 130, 108);
 }
-.tab button.active  svg{
-	opacity: 1;
+.tab button.active svg {
+  opacity: 1;
 }
-.tab button span{
-	margin-right: 5px;
+.tab button span {
+  margin-right: 5px;
 }
 
-.tablinks .counter{
-	margin-left: 5px;
-    color: #24292e;
-    display: inline-block;
-    min-width: 20px;
-    font-size: 12px;
-    font-weight: 500;
-    color: #24292e;
-    text-align: center;
-    background-color: rgba(209,213,218,0.5);
-    padding: 2px 6px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent;
-    border-image: initial;
-    border-radius: 2em;
-
+.tablinks .counter {
+  margin-left: 5px;
+  color: #24292e;
+  display: inline-block;
+  min-width: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #24292e;
+  text-align: center;
+  background-color: rgba(209, 213, 218, 0.5);
+  padding: 2px 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+  border-radius: 2em;
 }
 
 /* Style the tab content */
 
-
 .sidebar {
-	margin-top: -706px;
-	  padding: 0;
-	  position: relative;
+  margin-top: -706px;
+  padding: 0;
+  position: relative;
   width: 25%;
   padding: 0 16px;
   height: 100%;
   /* top: 109px; */
   overflow: auto;
 }
-.names{
-	z-index: 2;
+.names {
+  z-index: 2;
 }
 .names .full-name {
   font-size: 26px;
@@ -418,19 +426,19 @@ padding: 12px 16px;
 }
 
 div.content {
-	width: 75%;
-	display: none;
-	padding: 6px 12px;
-	border-top: none;
+  width: 75%;
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
   padding: 1px 16px;
   height: 1000px;
   padding-top: 5px;
 }
-.tabcontent .top>div{
-	width: -webkit-fill-available;
+.tabcontent .top > div {
+  width: -webkit-fill-available;
 }
-.tabcontent .with-lang{
-	width: 50%;
+.tabcontent .with-lang {
+  width: 50%;
 }
 .content .find-repo {
   padding: 5px 12px;
@@ -442,182 +450,187 @@ div.content {
   outline: none;
   border: 1px solid rgb(225, 228, 232);
 }
-.find-repo::placeholder{
-    font-size: 14px;
-	line-height: 20px;
-	color: #24292e;
-	opacity: .8;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  .result{
-	max-width: fit-content;
-    font-size: 14px;
-	  padding: 10px ;
-	  border-bottom: 1px solid rgb(225, 228, 232);
-
-  }
+.find-repo::placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  color: #24292e;
+  opacity: 0.8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.result {
+  max-width: fit-content;
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 1px solid rgb(225, 228, 232);
+}
 .content .find-repo:focus {
-  border: 1px solid rgb(3, 102, 214) ;
-  box-shadow: rgba(3, 102, 214, .3) 0px 0px 0px 3px;
+  border: 1px solid rgb(3, 102, 214);
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 .content .top {
   justify-content: space-between;
   padding: 16px 0;
   border-bottom: 1px solid rgb(225, 228, 232);
 }
-.content .top .arrow, .content .top .book {
+.content .top .arrow,
+.content .top .book {
   width: 8px;
 }
 .content .top button {
-	cursor: pointer;
+  cursor: pointer;
   padding: 5px 16px;
   border-radius: 6px;
   font-size: 14px;
   color: rgb(36, 41, 46);
-  opacity: .75;
+  opacity: 0.75;
   font-weight: 500;
   line-height: 20px;
-  border: 1px solid rgba(27, 31, 25, .15);
+  border: 1px solid rgba(27, 31, 25, 0.15);
   background-color: rgb(250, 251, 252);
-  box-shadow: rgba(27, 31, 25, .04) 0px 1px 0px 0px, rgba(255, 255, 255, .25) 0px 1px 0px 0px inset;
+  box-shadow: rgba(27, 31, 25, 0.04) 0px 1px 0px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
 }
-.content .top .new{
-	color: #fff;
-	background-color: #2ea44f;
-	opacity: 1;
-	/* margin-left: 20px */
+.content .top .new {
+  color: #fff;
+  background-color: #2ea44f;
+  opacity: 1;
+  /* margin-left: 20px */
 }
-.new>span{
-	margin-right: 4px;
+.new > span {
+  margin-right: 4px;
 }
-.new strong{
-	color: #fff !important;
+.new strong {
+  color: #fff !important;
 }
-svg.white-fade{
-	fill: rgba(255,255,255,.8);
+svg.white-fade {
+  fill: rgba(255, 255, 255, 0.8);
 }
 .content .top button strong {
-color: #000;
-padding: 0 5px 0 2px;
+  color: #000;
+  padding: 0 5px 0 2px;
 }
-.content .top .new:hover{
-	background-color: #2c974b;
-transition: .2s;
+.content .top .new:hover {
+  background-color: #2c974b;
+  transition: 0.2s;
 }
-#fetchedRepos{
-	color: #000 !important;
+#fetchedRepos {
+  color: #000 !important;
 }
-#fetchedRepos .repo{
-	padding: 24px 0;
-	border-bottom: 1px solid rgb(225, 228, 232);
-
+#fetchedRepos .repo {
+  padding: 24px 0;
+  border-bottom: 1px solid rgb(225, 228, 232);
 }
-#fetchedRepos .head, #fetchedRepos .bottom{
-	justify-content: space-between;
+#fetchedRepos .head,
+#fetchedRepos .bottom {
+  justify-content: space-between;
 }
-#fetchedRepos .bottom{
-	margin-top: 8px;
+#fetchedRepos .bottom {
+  margin-top: 8px;
 }
-#fetchedRepos .head{
-	margin-bottom: 8px;
+#fetchedRepos .head {
+  margin-bottom: 8px;
 }
-#fetchedRepos .title{
-	color: rgb(3, 102, 214);
-	font-weight: 600;
-	cursor: pointer;
-	font-size: 20px;
-	line-height: 30px;
-	text-decoration: none;
-	list-style-type: disc;
+#fetchedRepos .title {
+  color: rgb(3, 102, 214);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  list-style-type: disc;
 }
-#fetchedRepos .title:hover{
-	text-decoration: underline;
-	transition: .3s;
+#fetchedRepos .title:hover {
+  text-decoration: underline;
+  transition: 0.3s;
 }
-#fetchedRepos .tag{
-	margin: 0 0 0px 5px;
-	border-radius: 24px;
-	color: rgb(88, 96, 105);
-	font-size: 12px;
-	line-height: 18px;
-	font-weight: 600;
-	padding: 0 7px;
-	vertical-align: middle;
-	border: 1px solid  rgb(225, 228, 232);
+#fetchedRepos .tag {
+  margin: 0 0 0px 5px;
+  border-radius: 24px;
+  color: rgb(88, 96, 105);
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  padding: 0 7px;
+  vertical-align: middle;
+  border: 1px solid rgb(225, 228, 232);
 }
-#fetchedRepos .repo button{
-	padding: 3px 12px;
-    font-size: 12px;
-	line-height: 20px;
-	font-weight: 500;
-    line-height: 20px;
-    white-space: nowrap;
-	vertical-align: middle;
-	background-color: rgb(250, 251, 252);
-	border-radius: 6px;
-	cursor: pointer;
-	border: 1px solid rgba(243,244,246);
+#fetchedRepos .repo button {
+  padding: 3px 12px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: rgb(250, 251, 252);
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid rgba(243, 244, 246);
 }
-#fetchedRepos .repo button:hover{
-	background-color: rgb(red, green, blue);
-	box-shadow: rgba(27, 13,35, .04 )0px 1px 0px 0px rgba(255, 255, 255, .25)0px 1px 0px 0px inset;
+#fetchedRepos .repo button:hover {
+  background-color: rgb(red, green, blue);
+  box-shadow: rgba(27, 13, 35, 0.04) 0px 1px 0px 0px rgba(255, 255, 255, 0.25)
+    0px 1px 0px 0px inset;
 }
-.repo .star{
-	margin-right: 4px;
-	fill-opacity: .6;
-	vertical-align: text-bottom;
+.repo .star {
+  margin-right: 4px;
+  fill-opacity: 0.6;
+  vertical-align: text-bottom;
 }
-.octicon-smiley{
-	fill-opacity: .6;
+.octicon-smiley {
+  fill-opacity: 0.6;
 }
-.repo-rhs p, .repo-rhs a, .repo-rhs span{
-	color: rgb(88, 96, 105);
-	font-size: 12px;
-	line-height: 8px;
+.repo-rhs p,
+.repo-rhs a,
+.repo-rhs span {
+  color: rgb(88, 96, 105);
+  font-size: 12px;
+  line-height: 8px;
 }
-.repo-rhs svg{
-	opacity: .7;
-	
+.repo-rhs svg {
+  opacity: 0.7;
 }
-.octicon-repo-forked{
-	margin-right: 2px;
+.octicon-repo-forked {
+  margin-right: 2px;
 }
-.octicon-law{
-	margin-right: 5px;
+.octicon-law {
+  margin-right: 5px;
 }
-.repo-rhs a{text-decoration: none;}
-.repo-rhs a:hover{
-	color:  rgb(3, 102, 214);
-	cursor: pointer;
-	transition: .2s;
+.repo-rhs a {
+  text-decoration: none;
 }
-.repo-rhs a:hover svg{
-	fill:  rgb(3, 102, 214);
-	opacity: 1;
-	transition: .2s;
+.repo-rhs a:hover {
+  color: rgb(3, 102, 214);
+  cursor: pointer;
+  transition: 0.2s;
 }
- .yellow{
-background-color: #f1e05a;
-position: relative;
-width: 12px;
-height: 12px;
-top: 0;
-margin-right: 4px;
+.repo-rhs a:hover svg {
+  fill: rgb(3, 102, 214);
+  opacity: 1;
+  transition: 0.2s;
 }
-.red{
-	background-color: #e34c26;
+.yellow {
+  background-color: #f1e05a;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  top: 0;
+  margin-right: 4px;
 }
-.purple{
-	background-color: #563d7c;
+.red {
+  background-color: #e34c26;
 }
-.repo-description{
-	color: #586069;
-	font-size: 14px;
-	line-height: 21px;
-	padding-bottom: 8px;
-	padding-right: 24px;
+.purple {
+  background-color: #563d7c;
 }
-
+.repo-description {
+  color: #586069;
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 8px;
+  padding-right: 24px;
+}
 
 /* mobile breakpoint start */
 @media screen and (max-width: 1024px) {
@@ -633,87 +646,89 @@ margin-right: 4px;
     max-width: 720px;
     padding: 0;
   }
-  .mobileinfo{
-
-	padding: 0 16px;
-}
-.mobileinfo .names .full-name{
-	font-weight: 600;
-}
-.mobileinfo>.large_dp{
-	display: flex;
-}
-.mobileinfo>.large_dp img{ 
-width: 15%;
-}
-.mobileinfo .smiley{
-	width: 100%;
-	border-radius: 6px;
-	padding:  8px;
-	margin: 8px 0 15px 0;
-	right: auto;
-    bottom: auto;;
-	position: relative;
-	display: flex;
+  .mobileinfo {
+    padding: 0 16px;
+  }
+  .mobileinfo .names .full-name {
+    font-weight: 600;
+  }
+  .mobileinfo > .large_dp {
+    display: flex;
+  }
+  .mobileinfo > .large_dp img {
+    width: 15%;
+  }
+  .mobileinfo .smiley {
+    width: 100%;
+    border-radius: 6px;
+    padding: 8px;
+    margin: 8px 0 15px 0;
+    right: auto;
+    bottom: auto;
+    position: relative;
+    display: flex;
     justify-content: start;
-	align-items: center;
-	height: auto;
-}
-.mobileinfo .smiley .text{
-	display: inline;
-}
+    align-items: center;
+    height: auto;
+  }
+  .mobileinfo .smiley .text {
+    display: inline;
+  }
   .mobilePull {
     display: none !important;
   }
-  .desktopPull, .dropdown-menu, .mobileinfo{
-	  display: block !important;
+  .desktopPull,
+  .dropdown-menu,
+  .mobileinfo {
+    display: block !important;
   }
   .container-body {
-	  padding: 10px 24px;
+    padding: 10px 24px;
   }
-  .tab .container-body{
-	  overflow-x: scroll;
+  .tab .container-body {
+    overflow-x: scroll;
   }
-  .lhs .search > input{
-	  width: 100%;
-	  background-position: 99% center
+  .lhs .search > input {
+    width: 100%;
+    background-position: 99% center;
   }
-    .tab .container-body::-webkit-scrollbar {
-	height: .5px;
+  .tab .container-body::-webkit-scrollbar {
+    height: 0.5px;
   }
-   
-    .tab .container-body::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+  .tab .container-body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
-   
-    .tab .container-body::-webkit-scrollbar-thumb {
-	background-color: darkgrey;
-	outline: 1px solid slategrey;
+
+  .tab .container-body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
   }
-  div.content{
-	  padding-right: 0;
-	  padding-left: 0;
-	  width: 100%;
+  div.content {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
   }
-  .tab-triggers{
-	display: flex;
+  .tab-triggers {
+    display: flex;
   }
-  .contenty{
-	  display: block;
+  .contenty {
+    display: block;
   }
- 
-  .sidebar, .tab .info{
-	  display: none;
+
+  .sidebar,
+  .tab .info {
+    display: none;
   }
-  .content .top{
-	display: block;
+  .content .top {
+    display: block;
   }
-  .tabcontent .top>div{
-	  margin-bottom: 16px;
-	  margin-right: 0;
+  .tabcontent .top > div {
+    margin-bottom: 16px;
+    margin-right: 0;
   }
-  .with-lang{
-	justify-content: space-between;
+  .with-lang {
+    justify-content: space-between;
   }
   /* navbar css for mobile start */
   .nav-toggler,
@@ -738,22 +753,21 @@ width: 15%;
   }
   .site-navbar ul li {
     width: 100%;
-
   }
   .site-navbar ul li a {
-	padding: 8px 0;
-	border-top: 1px solid rgb(72, 70, 70);
-	border-bottom: 1px solid rgb(72, 70, 70);
+    padding: 8px 0;
+    border-top: 1px solid rgb(72, 70, 70);
+    border-bottom: 1px solid rgb(72, 70, 70);
   }
-  .no-bb{
-	  border-bottom: 0!important;
+  .no-bb {
+    border-bottom: 0 !important;
   }
 
   .site-navbar ul.open {
     max-height: 70vh;
-	overflow: visible;
-	padding: 16px;
-	z-index: 2;
+    overflow: visible;
+    padding: 16px;
+    z-index: 3;
   }
 
   /* navbar css for mobile end */
@@ -772,26 +786,28 @@ width: 15%;
   }
 }
 @media screen and (max-width: 425px) {
-	.with-lang,.repo-lhs{
-		overflow-x: scroll;
-	}
-	.with-lang::-webkit-scrollbar,.repo-lhs::-webkit-scrollbar {
-		height: .2px;
-	  }
-	   
-		.with-lang::-webkit-scrollbar-track, .repo-lhs::-webkit-scrollbar-track {
-		box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-	  }
-	   
-		.with-lang::-webkit-scrollbar-thumb ,.repo-lhs::-webkit-scrollbar-thumb{
-		background-color: darkgrey;
-		outline: 1px solid slategrey;
-	  }
+  .with-lang,
+  .repo-lhs {
+    overflow-x: scroll;
+  }
+  .with-lang::-webkit-scrollbar,
+  .repo-lhs::-webkit-scrollbar {
+    height: 0.2px;
+  }
+
+  .with-lang::-webkit-scrollbar-track,
+  .repo-lhs::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .with-lang::-webkit-scrollbar-thumb,
+  .repo-lhs::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
 }
 @media screen and (max-width: 375px) {
-.repo-rhs{
-	
+  .repo-rhs {
     flex-wrap: wrap;
-
-}
+  }
 }
