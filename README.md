@@ -1,3 +1,3 @@
 # git-repo
 
-[click to view webpage](https://deegitrepo.netlify.app/.
+[click to view website](https://deegitrepo.netlify.app/).
