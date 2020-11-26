@@ -54,6 +54,52 @@ svg.white {
 /* default css end */
 
 /* navbar regular css start */
+/* dropdowns */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 300px;
+    color: rgb(36, 41, 46);
+  font-size: 12px;
+  line-height: 21px;
+  right: 15px;
+  margin: 8px 0 16px 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+.modal{
+  display: none;
+}
+.dropdown-content a {
+  color: black;
+  padding: 7px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom:1px solid rgb(225, 228, 232);
+}
+
+.dropdown a:hover {background-color: rgb(246, 248, 250);}
+.show {display: block;}
+/* dropdowns end */
 .navbar-area {
   background: #24292e;
   line-height: 1.5;
@@ -133,15 +179,6 @@ a.site-logo > svg:hover {
   position: relative;
 }
 
-.notify {
-  width: 17px;
-  height: 16px;
-  cursor: pointer;
-}
-.notify:hover {
-  opacity: 0.7;
-  transition: 0.3s;
-}
 .dot {
   height: 9px;
   width: 9px;
@@ -160,8 +197,10 @@ a.site-logo > svg:hover {
   border-radius: 50%;
 }
 .rhs li:hover {
-  opacity: 0.7;
   cursor: pointer;
+}
+.rhs li:hover svg ,.rhs li:hover .dot {
+  opacity: 0.7;
 }
 .rhs .plus {
   width: 20px;
@@ -224,6 +263,48 @@ a.site-logo > svg:hover {
 .large_dp img {
   border-radius: 50%;
   width: 100%;
+  cursor: pointer;
+}
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  padding: 5.5px 8.25px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font:normal normal 11px/1.5 -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  border-radius: 6px;
+   position: absolute;
+  z-index: 1;
+  bottom: -31px;
+  left: 50%;
+  margin-left: -60px;
+}
+.search .tooltiptext{
+  right: 0;
+  margin-left: 0;
+  left: auto;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.search .tooltiptext::after{
+  content: none;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 .mobileinfo {
   display: none;
@@ -349,14 +430,14 @@ a.site-logo > svg:hover {
   padding: 14px 16px;
   transition: 0.3s;
   color: #24292e;
-  border-bottom: 3px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 .tab .r-pd {
   padding: 12px 16px;
 }
 
 .tab button:hover {
-  border-bottom: 3px solid #ddd;
+  border-bottom: 2px solid #ddd;
 }
 .tablinks svg {
   vertical-align: text-bottom;
@@ -399,10 +480,10 @@ a.site-logo > svg:hover {
   width: 25%;
   padding: 0 16px;
   height: 100%;
-  overflow: auto;
+
 }
 .names {
-  z-index: 2;
+  z-index: 1;
 }
 .names .full-name {
   font-size: 26px;
@@ -427,7 +508,8 @@ div.content {
   width: -webkit-fill-available;
 }
 .tabcontent .with-lang {
-  width: 50%;
+  justify-content: flex-end;
+  width: 40%;
 }
 .content .find-repo {
   padding: 5px 12px;
@@ -635,6 +717,9 @@ svg.white-fade {
     max-width: 720px;
     padding: 0;
   }
+  .dropdown-content{
+    right: auto;
+  }
   .mobileinfo {
     padding: 0 16px;
   }
@@ -643,15 +728,17 @@ svg.white-fade {
   }
   .mobileinfo > .large_dp {
     display: flex;
+    
   }
   .mobileinfo > .large_dp img {
     width: 15%;
+    
   }
   .mobileinfo .smiley {
     width: 100%;
     border-radius: 6px;
     padding: 8px;
-    margin: 8px 0 15px 0;
+    margin: 8px 0 30px 0;
     right: auto;
     bottom: auto;
     position: relative;
@@ -715,9 +802,11 @@ svg.white-fade {
   .tabcontent .top > div {
     margin-bottom: 16px;
     margin-right: 0;
+
   }
   .with-lang {
-    justify-content: space-between;
+        justify-content: space-between !important;
+    width: 100%;
   }
   /* navbar css for mobile start */
   .nav-toggler,
@@ -773,24 +862,52 @@ svg.white-fade {
   }
 }
 @media screen and (max-width: 425px) {
-  .with-lang,
+  
   .repo-lhs {
     overflow-x: scroll;
   }
-  .with-lang::-webkit-scrollbar,
+  
   .repo-lhs::-webkit-scrollbar {
     height: 0.2px;
   }
 
-  .with-lang::-webkit-scrollbar-track,
+  
   .repo-lhs::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
 
-  .with-lang::-webkit-scrollbar-thumb,
+  
   .repo-lhs::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     outline: 1px solid slategrey;
+  }
+  .content .top button{
+    padding: 5px 8px;
+  }
+
+  .modal{
+       position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); 
+  }
+  .modal .dropdown-content{
+    background-color: #fff;
+  margin: 30% auto; /* 15% from the top and centered */
+  width: 90%;
+  height: 60vh;
+  overflow-x: auto;
+  font-size: 14px; 
+  position: unset;
+  border-radius: 12px;
+  }
+  .modal .dropdown-content a{
+    padding: 16px;
   }
 }
 @media screen and (max-width: 375px) {

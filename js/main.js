@@ -41,10 +41,37 @@ function myFunction() {
     navbar.classList.add("sticky")
     infoScroll.style.visibility="visible"
   } else {
-    navbar.classList.remove("sticky");
+   navbar.classList.remove("sticky");
     infoScroll.style.visibility="hidden"
   }
  
+}
+
+
+   var dropDown = document.getElementById("myDropdown");
+   var modal = document.getElementById("myModal");
+
+
+var btn = document.getElementsByClassName("dropbtn");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+
+
+span.onclick = function() {
+  dropDown.style.display = "none";
+  // modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == dropDown) {
+    dropDown.style.display = "none";
+  }
+  // if (event.target == modal) {
+  //   modal.style.display = "none";
+  // }
 }
 
 
